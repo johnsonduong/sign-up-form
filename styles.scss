@@ -1,0 +1,224 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.container {
+    display: flex;   
+}
+
+
+.cover-photo {
+    background: url('mountains.jpeg');
+    width: 50%;
+    height: 100vh;
+    background-size: cover;
+    background-position: 0%;
+
+    .bar {
+        margin-top: 5em;
+        color: white;
+        font-size: 30px;
+        font-style: bold;
+        width: 100%;
+        height: 4em;
+        background-color: rgba(0, 0, 0, 0.4);
+        // opacity: 0.3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        .logo {
+            height: 100%;
+        }
+
+    }
+    
+}
+
+.info {
+    width: 50vw;
+    margin: 5em 5em;
+
+    h1 {
+        text-transform: capitalize;
+    }
+    
+    h2 {
+        font-size: 26px;
+        text-transform: capitalize;
+    }
+
+    p {
+        margin-bottom: 6em;
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+
+    .form-container {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 3em;
+    
+        .col1,
+        .col2 {
+            border: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+    
+            label {
+                font-size: 14px;
+                margin-bottom: 0.2em;
+            }
+    
+            input {
+                width: 20em;
+                height: 2em;
+                margin-bottom: 1.5em;
+
+            }
+        }
+    
+        .col2 {
+            margin-left: 5%;
+        }
+    }
+
+    button {
+        width: 7em;
+        height: 3em;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: #FFFFFF;
+        background-color: #4CAF50;
+        border: none;
+        border-radius: 5px;
+
+          
+        &:hover {background-color: #3e8e41}
+        
+        &:active {
+            background-color: #3e8e41;
+        }
+    }
+    
+}
+
+a {
+    text-decoration: none;
+    color: #4CAF50;
+
+
+    &:hover {
+        text-decoration: underline;
+        color:#3e8e41;
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+
+    form {
+        display: flex;
+        flex-direction: column;
+    
+        .form-container {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            margin-bottom: 3em;
+        
+            .col1,
+            .col2 {
+                border: none;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+        
+                label {
+                    font-size: 14px;
+                    margin-bottom: 0.2em;
+                }
+        
+                input {
+                    width: 15em;
+                    height: 2em;
+                    margin-bottom: 1.5em;
+    
+                }
+            }
+
+            .col2 {
+                margin-left: 5%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    form {
+        display: flex;
+        flex-direction: column;
+    
+        .form-container {
+            display: block;
+            width: 100%;
+            height: 100%;
+            margin-bottom: 3em;
+        
+            .col1,
+            .col2 {
+                border: none;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+        
+                label {
+                    font-size: 10px;
+                    margin-bottom: 0.2em;
+                }
+        
+                input {
+                    width: 15em;
+                    height: 2em;
+                    margin-bottom: 1em;
+    
+                }
+            }
+        }
+    }
+
+    .info {
+        width: 50vw;
+        margin: 2em 2em;
+
+        h1 {
+            text-transform: capitalize;
+            font-size: 20px;
+        }
+        
+        h2 {
+            font-size: 16px;
+            text-transform: capitalize;
+        }
+    
+        p {
+            margin-bottom: 2em;
+            font-size: 12px;
+        }
+    }
+}
